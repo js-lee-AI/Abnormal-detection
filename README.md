@@ -14,19 +14,18 @@ The dataset is about 9,000 images included a total of 12 PCs and 5 people.
 Using **YOLO-v3**, I used images to insert a storage device (such as USB) into a PC.
 
 ## Classes
-Three out of five people were recognized through **face recognition**  and we call these ***insider***.<br>
-*- We pre-trained the face recognition model to recognize the faces of these three people.*
+Three out of five people were recognized through **face recognition**  and we call these ***insider***.
 
+*- We pre-trained the face recognition model to recognize the faces of these three people.*
 And the other two people, we call them ***outsider***. 
 
-<br>
-In the dataset,  we cropped unfixed pixels that someone inserts a storage device into a PC visibly. We defined this class as **'PC_Vis**'.<br>
+In the dataset,  we cropped unfixed pixels that someone inserts a storage device into a PC visibly. We defined this class as **'PC_Vis**'. <br>
 If a device is inserted invisibly, We defined this class as **'PC_Invis**.
 
-<br>
+
 Likewise, If a device is inserted into a laptop, We defined as **'Laptop_Vis'** and **'Laptop_Invis'**.
 
-<br>
+
 Finally, we defined a **'face'** class that detects human faces.
 
 ## Customize
