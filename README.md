@@ -1,5 +1,5 @@
 # Abnormal Detection for Corporate Internal Security
-This project aims to prevent corporate internal security (especially data leakage through storage device) using customized YOLOv3.  You can find referenced code [here](https://github.com/eriklindernoren/PyTorch-YOLOv3). 
+This project aims to prevent corporate internal security problems (especially data leakage through storage device) using customized YOLOv3.  You can find referenced code [here](https://github.com/eriklindernoren/PyTorch-YOLOv3). 
 
 > Our code is not provided due to security concerns and it is Enterprise Cooperation Project.
 
@@ -11,22 +11,23 @@ This project aims to prevent corporate internal security (especially data leakag
 ## Dataset
 The dataset is about 9,000 images included a total of 12 PCs and 5 people.
 
-Using **YOLO-v3**, I used images to insert a storage device (such as USB) into a PC.
+Using **YOLO-v3**, I used images which is someone inserts storage device (such as USB) into a PC.
 
 ## Classes
 Three out of five people were recognized through **face recognition**  and we call these ***insider***.
 
 *- We pre-trained the face recognition model to recognize the faces of these three people.*
+
 And the other two people, we call them ***outsider***. 
 
-In the dataset,  we cropped unfixed pixels that someone inserts a storage device into a PC visibly. We defined this class as **'PC_Vis**'. <br>
+In the dataset,  we cropped pixels (unfixed-sized) that someone inserts a storage device into a PC visibly. We defined this class as **'PC_Vis**'. <br>
 If a device is inserted invisibly, We defined this class as **'PC_Invis**.
 
 
 Likewise, If a device is inserted into a laptop, We defined as **'Laptop_Vis'** and **'Laptop_Invis'**.
 
 
-Finally, we defined a **'face'** class that detects human faces.
+Finally, we defined a **'face'** class when it detects human faces.
 
 ## Customize
 Face recognition was performed with YOLO-v3.
@@ -36,7 +37,7 @@ When a face is detected by YOLO-v3 (Does not distinguish who it is.), it determi
 We just customized the YOLO-v3 model using only 5 classes (**PC_Vis**, **PC_Invis**, **Laptop_Vis**, **Laptop_Invis**, **Face**).
 
 ## Additional work
-Additionally, a cam was connected to the Raspberry Pi to detect in real time. As soon as abnormal behavior is detected, a buzzer sounds on the Raspberry Pi.
+Additionally, a cam was connected to the Raspberry Pi for real-time detection. As soon as abnormal behavior is detected, a buzzer sounds on the Raspberry Pi and send a LINE message.
 
 ## Related papers
 [*YOLOv3: An Incremental Improvement by Joseph Redmon*](https://arxiv.org/abs/1804.02767)
