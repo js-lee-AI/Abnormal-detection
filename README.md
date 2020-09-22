@@ -4,9 +4,11 @@ This project aims to prevent corporate internal security problems (especially da
 > Our code is not provided due to security concerns and it is Enterprise Cooperation Project.
 
 ## Demo
-![0](./img/demo1.gif)
+Demo 1 - She doesn't belong to ***Insider*** class So, it can't detect her face. 
+![0](./gif/demo1.gif)
 
-![1](./img/demo2.gif)
+Demo 2 - She belongs to ***Insider*** class So, it can detect her face. 
+![1](./gif/demo2.gif)
 
 ## Dataset
 The dataset is about 9,000 images included a total of 12 PCs and 5 people.
@@ -37,7 +39,9 @@ When a face is detected by YOLO-v3 (Does not distinguish who it is.), it determi
 We just customized the YOLO-v3 model using only 5 classes (**PC_Vis**, **PC_Invis**, **Laptop_Vis**, **Laptop_Invis**, **Face**).
 
 ## Additional work
-Additionally, a cam was connected to the Raspberry Pi for real-time detection. As soon as abnormal behavior is detected, a buzzer sounds on the Raspberry Pi and send a LINE message.
+Additionally, a cam was connected to the Raspberry Pi for real-time detection. 
+
+As soon as abnormal behavior is detected, beeps have been generated and line message has been sent via Raspberry Pi.
 
 ## Related papers
 [*YOLOv3: An Incremental Improvement by Joseph Redmon*](https://arxiv.org/abs/1804.02767)
