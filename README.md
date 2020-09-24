@@ -1,4 +1,4 @@
-# Abnormal Detection for Corporate Internal Security
+# Abnormal Behavior Detection for Corporate Internal Security
 This project aims to prevent corporate internal security problems (especially data leakage through storage device) using customized YOLOv3.  You can find referenced code [here](https://github.com/eriklindernoren/PyTorch-YOLOv3). 
 
 > Our code is not provided due to security concerns and it is Enterprise Cooperation Project.
