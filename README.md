@@ -44,9 +44,9 @@ Additionally, a cam was connected to the Raspberry Pi for real-time detection.
 As soon as abnormal behavior is detected, beeps have been generated and line message has been sent via Raspberry Pi.
 
 ## Related papers
-[*YOLOv3: An Incremental Improvement by Joseph Redmon*](https://arxiv.org/abs/1804.02767)
+[*YOLOv3: An Incremental Improvement*](https://arxiv.org/abs/1804.02767) *by Joseph Redmon*
 
-[*You Only Look Once: Unified, Real-Time Object Detection by Joseph Redmon*](https://arxiv.org/abs/1506.02640)
+[*You Only Look Once: Unified, Real-Time Object Detection*](https://arxiv.org/abs/1506.02640) *by Joseph Redmon*
 
 
 ## Author
