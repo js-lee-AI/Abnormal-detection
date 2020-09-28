@@ -54,3 +54,8 @@ Jungseob Lee / [ js-lee-AI](https://github.com/js-lee-AI) / omanma1928@naver.com
 
 Juhoon Kim / [galaxy1014](https://github.com/galaxy1014) / galaxy1014@naver.com
 
+
+## Contact
+If you need advice on my project, feel free to email me.
+
+*omanma1928@naver.com*
